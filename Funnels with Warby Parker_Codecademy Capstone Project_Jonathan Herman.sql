@@ -419,7 +419,8 @@ ORDER BY 2 DESC;
 /* I used this query and research on the Warby Parker website to confirm which colors mapped to which models.
 Combining my analysis from the color analysis on [SLIDES 12-13], I'm able to arrive at my recommendations. */
 
-SELECT model_name, color
+SELECT model_name, 
+   color
 FROM purchase
 GROUP BY 2
 ORDER BY 1 ASC;
